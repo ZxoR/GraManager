@@ -1,0 +1,17 @@
+CREATE TABLE "dealInformation" (
+    "dealID" INTEGER NOT NULL,
+    "buyerID" INTEGER NOT NULL,
+    "buyerName" TEXT,
+    "buyerOrdered" REAL,
+    "buyerPaid" INTEGER DEFAULT (0)
+);
+
+CREATE TABLE "dealslist" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "dealName" TEXT,
+    "dealWith" TEXT,
+    "dealLocation" TEXT,
+    "dealDate" TEXT,
+    "pricePerGram" INTEGER
+);
+
